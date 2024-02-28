@@ -1,0 +1,551 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin:0 ;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif,tahoma;
+}
+
+.container
+{
+    width: 1170px;
+    margin: auto;
+}
+.nav
+{
+    background: url(images/pexels.jpeg);
+    background-size: 100% 100%;
+    height: 600px;
+padding-top: 20px;}
+
+.nav .navber
+{
+        background-color: #1a202e;
+        width: 1250px;
+        height: 67px;
+        margin-top:100px;
+        border-radius: 45px;
+        justify-content: flex-end;   
+display: flex;
+
+
+}
+
+.nav .navber h2
+{
+    display: block;
+    padding-top: 20px;
+    margin-right:90px ;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #ffffff;
+}
+.nav .navber span
+{
+    color: #004cff;
+}
+
+
+.nav .navber ul
+{
+    display: flex;
+}
+.nav .navber ul li a
+{
+    display: block;
+    padding: 20px 20px;
+    color: #b9b9b9;
+    font-size: 20px;
+    text-align: right;
+}
+.nav .navber ul ul
+{ 
+    display: block;
+    background-color:#1a202e ;
+    z-index: 2;
+
+}
+.nav .navber li a:hover
+{
+    background-color:#23272f ;
+    color: #ffffff;
+    
+}
+.nav .navber > li
+
+{
+    float: left;
+}
+.nav .navber li
+{
+    display: block;
+}
+.nav .navber li ul
+{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+.nav .navber li:hover > ul
+{
+    display: block;
+}
+.nav .navber li ul li
+{
+    position: relative;
+}
+
+
+.nav .navber li ul li ul 
+{
+    left: -150px;
+    top: 0;
+}
+.nav .te
+{
+    float: right;
+    padding-top: 80px;
+    transition: all .5s ease-in forwards;
+    transition-delay: .5s;
+    z-index: 1;
+
+}
+.nav .te h3
+{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.nav .te p
+{
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+}
+.nav .te a
+{
+    position: relative;
+    padding: 15px 30px;
+    width: 250px;
+    color: #ffffff;
+    font-size: 40px;
+    overflow: hidden;
+    transition: .5s;
+    font-weight: bold;
+    margin-top: 30px;
+    display: block;
+    margin-left: 150px;
+    text-align: center;
+
+}
+
+.nav .te a:hover
+{
+    background: none;
+    box-shadow: 0 0 10px  #CCB498, 0 0 40px #CCB498, 0 0 80px #CCB498;
+    transition-delay: 1s;
+    color: #ffffff;
+}
+
+.nav .te a span
+{
+    position: absolute;
+    display: block;
+}
+.nav .te a span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#8E7860);
+}
+
+.nav .te a:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 1s;
+}
+
+.nav .te a span:nth-child(3)
+{
+   bottom: 0; 
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#8E7860);
+}
+
+.nav .te a:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: .5s;
+}
+
+
+.nav .te a span:nth-child(2)
+{
+   top: -100%; 
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#8E7860);
+}
+
+.nav .te a:hover span:nth-child(2)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: .25s;
+}
+
+
+.nav .te a span:nth-child(4)
+{
+   bottom: -100%; 
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#8E7860);
+}
+
+.nav .te a:hover span:nth-child(4)
+{
+   bottom: 100%;
+    transition: 1s;
+    transition-delay: .75s;
+}
+.ne
+{
+    overflow: hidden;
+    width: 100%;
+    padding-top:70px;
+    padding-bottom:70px;
+    background-color: #11151e;
+}
+.ne h2
+{
+    font-size: 30px;
+    color: #ffffff;
+    text-align: right;
+    margin-bottom: 30px;
+}
+.ne .ws
+{
+    width: 30.3333%;
+    float: right;
+
+    padding-bottom: 30px;
+    margin-left: 20px;
+    transition: all .5s ease-in-out;
+transition-delay: .7s;
+}
+.ne .ws .sing
+{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.ne .ws .sing .foto
+{
+    width: 100%;
+    height: 300px;
+    transition: all .5s;
+    box-shadow: 20px 30px 10px rgba(0,0,0,.7);
+}
+
+
+.ne .text
+{
+   position: absolute;
+   padding: 10px;
+   bottom: 0;
+   width: 100%;
+   background: rgba(0,0,0,.7) ;
+   transform: translateY(100%);
+   text-align: right;
+transition: all .5s ease-in-out;
+color: #ffffff;
+
+
+}
+.ne .ws .text h3
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.ne .ws .text p
+{
+    font-size: 20px;
+}
+
+
+
+
+
+
+.ne .ws .sing:hover .text 
+{
+    transform: translateY(0);
+}
+
+
+.ne .ws .sing:hover .foto
+{
+    transform: scale(1.15);
+}
+.computer
+{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #131721;
+
+}
+.computer h2
+{
+    font-size: 30px;
+    color: #ffffff;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.computer .w
+{
+    width: 70%;
+    float: right;
+    background-color: #232b3e;
+    margin-bottom: 30px;
+    transition:all .5s ease-out;
+    transition-delay: .8s;
+
+}
+.computer .world
+{
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.computer .world .comp
+{
+    width: 40%;
+    height: 300px;
+    float: right;
+    margin-left: 30px;
+    transition:all .4s ease-out;
+}
+.computer .world:hover .comp
+{
+    transform: scale(1.15);
+}
+
+.computer .world a 
+{
+    display: block;
+        text-align: right;
+        font-size: 30px;
+        color: #ccc;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    
+ }
+
+ .computer .world a:hover 
+ {
+     color: #2196f3;
+ }
+
+
+
+.computer .world p
+{
+    text-align: right;
+    font-size: 23px;
+    color: #ccc;
+    transition:all .5s ease-out;
+    transition-delay: .6s;
+}
+
+.computer .Advertising
+{
+    width: 25%;
+    transition:all .5s ease-out;
+    transition-delay: .7s;
+}
+.computer .Advertising img
+{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.app
+{
+    width: 100%;
+    overflow: hidden;
+    background-color: #1a202e;
+    transition:all .9s ease-in-out;
+    transition-delay: 1s;
+    
+}
+.app .appel
+{
+    width: 50%;
+   
+}
+
+.app .appel img
+{
+    width: 100%;
+    height: 670px;
+    float: left;
+}
+.app .text
+{
+    width: 40%;
+    float: right;
+    text-align: right;
+    transition:all .9s ease-in-out;
+    transition-delay: .7s;
+
+}
+
+.app .text h3{
+    color: #ffffff;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+   
+
+    
+}
+
+.app .text p{
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #ffffff;
+
+}
+
+.app .text p:nth-child(2)
+{
+    padding-bottom: 40px;
+}
+
+.app .text button
+{
+    color: #ffffff;
+    padding: 10px 20px;
+    background: none;
+    font-size: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+
+}
+.app .text button:hover{
+    background-color: #11151e;
+    box-shadow:5px 3px 7px 2px rgb(0, 0, 0);
+}
+
+.Technology
+{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #11151e;
+    overflow: hidden;
+}
+.Technology h2
+{
+    padding-top: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    transition: all .5s ease-in-out;
+    transition-delay: .6s;
+
+}
+.Technology span
+{
+    display: block;
+    text-align: center;
+    color: #b9b9b9;
+    font-size: 20px;
+    transition: all .5s ease-in-out;
+    transition-delay: .8s;
+
+}
+.Technology .advice
+{
+    width: 30.3333%;
+    height: 300px;
+    float: right;
+    background-color: #232b3e;
+    margin-top: 80px;
+    color: #ffffff;
+    transition:all .3s ease-in-out;
+    margin-right:30px ;
+    margin-bottom: 40px;
+}
+.Technology .advice:hover
+{
+    color: #11151e;
+    background-color: #ffffff;
+    border-bottom: 3px solid #6383cf;
+}
+.Technology .advice h3
+{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    transition:all .5s ease-in-out;
+
+
+}
+.Technology .advice p
+{
+    font-size: 20px;
+    padding-right: 20px;
+    text-align: right;
+    transition:all .6s ease-in-out;
+
+}
+.Technology .advice a
+{
+display: block;   
+ font-size: 25px;
+    padding: 10px 20px;
+    float: right;
+margin-right: 10px;
+margin-top: 20px;
+border-radius: 45px;
+color: #6383cf;
+
+}
+
+.Technology .advice a:hover 
+{
+    color: #11151e;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
